@@ -82,7 +82,7 @@ function Note() {
     const name = event.target.name
     console.log(id) ;
     let newlist = list.map((item, index)=>{
-      if(index != id)
+      if(index !== id)
         return item;
       else 
         return {...item,[name]:event.target.value} ;
